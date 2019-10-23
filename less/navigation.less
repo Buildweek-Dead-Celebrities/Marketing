@@ -14,10 +14,16 @@ header{
         .flex();
         justify-content: space-between;
         width:50%;
-   
+            @media @phone{
+                flex-direction: column;
+               
+            }
        
     }
         a{
             font-family: @secondary;
+            @media @phone {
+                margin: 2%;
+            }
         }
 }
