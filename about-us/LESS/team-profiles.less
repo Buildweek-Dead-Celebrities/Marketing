@@ -3,12 +3,26 @@ h3 {
   font-size: 1.5rem;
 }
 
+.team-profiles {
+  @media @mobile {
+    .flex(center, center);
+    flex-direction: column;
+  }
+}
+
 .team-container {
   .flex(flex-start, flex-start);
   background: @accent3;
   height: 27.5rem;
   margin: 2.5% 1.5%;
   border-radius: 10px;
+
+  @media @mobile {
+    .flex(center, center);
+    flex-direction: column-reverse;
+    height: 35rem;
+    width: 35rem;
+  }
 }
 
 .pic-container {
@@ -46,9 +60,27 @@ h3 {
 
   p {
     margin: 2%;
+    @media @mobile {
+      display: none;
+    }
   }
 
   h2 {
     color: white;
+  }
+}
+
+.fab {
+  font-size: 2.5rem;
+  margin: 1% 4%;
+  color: @main-bg;
+  @media @mobile {
+    display: none;
+  }
+
+  a {
+    font-family: 'Catamaran', sans-serif;
+    text-decoration: none;
+    color: @main-bg;
   }
 }

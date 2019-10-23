@@ -172,12 +172,26 @@ header {
   height: 135px;
   margin: 0 2% 1%;
 }
+@media (max-width: 700px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 3rem;
   width: 55%;
+}
+@media (max-width: 700px) {
+  header nav {
+    margin-top: 2%;
+    width: 75%;
+  }
 }
 header a {
   text-decoration: none;
@@ -201,7 +215,7 @@ header a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 70%;
+  width: 85%;
   height: 4rem;
   margin: 1% 0 1.5% 0;
 }
@@ -209,8 +223,9 @@ header a {
   text-decoration: none;
   color: darkgray;
   font-size: 1.8rem;
-  margin: 0 3%;
-  width: 8rem;
+  margin: 0 2%;
+  width: 10rem;
+  border: black solid 2px;
 }
 .blurb {
   display: flex;
@@ -231,6 +246,14 @@ h3 {
   color: white;
   font-size: 1.5rem;
 }
+@media (max-width: 500px) {
+  .team-profiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .team-container {
   display: flex;
   justify-content: flex-start;
@@ -239,6 +262,16 @@ h3 {
   height: 27.5rem;
   margin: 2.5% 1.5%;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: 35rem;
+    width: 35rem;
+  }
 }
 .pic-container {
   display: flex;
@@ -274,6 +307,26 @@ h3 {
 .bio-container p {
   margin: 2%;
 }
+@media (max-width: 500px) {
+  .bio-container p {
+    display: none;
+  }
+}
 .bio-container h2 {
   color: white;
+}
+.fab {
+  font-size: 2.5rem;
+  margin: 1% 4%;
+  color: #AC3C3C;
+}
+@media (max-width: 500px) {
+  .fab {
+    display: none;
+  }
+}
+.fab a {
+  font-family: 'Catamaran', sans-serif;
+  text-decoration: none;
+  color: #AC3C3C;
 }
