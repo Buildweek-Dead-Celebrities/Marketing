@@ -1,0 +1,317 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+* {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 1.6rem;
+}
+h1 {
+  font-family: 'Fascinate Inline', cursive;
+  color: white;
+}
+a {
+  font-family: 'Catamaran', sans-serif;
+  text-decoration: none;
+  color: white;
+}
+body {
+  background: #FC9393;
+}
+p,
+a {
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.borders {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.borders .dead,
+.borders .alive {
+  margin: 15% 0;
+}
+.right {
+  position: absolute;
+  left: 80.5%;
+}
+.left {
+  left: 12%;
+}
+@media (max-width: 500px) {
+  .borders {
+    display: none;
+  }
+}
+button {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: #DB6B6B;
+}
+@media (max-width: 500px) {
+  button {
+    margin: 2% auto!important;
+  }
+}
+header {
+  width: 100%!;
+  background: #AC3C3C;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+header .title {
+  width: 100%;
+  text-decoration: none;
+}
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+header a {
+  font-family: 'Catamaran', sans-serif;
+}
+.top {
+  width: 80%;
+  margin: 0 10%;
+  background: #EC6C6C;
+  display: flex;
+  flex-direction: column;
+}
+.top .title {
+  border-radius: 50%;
+  background: #AC3C3C;
+}
+.top .title h1 {
+  padding: 5%;
+  font-size: 3rem;
+  text-align: center;
+}
+.main {
+  height: 100%;
+  padding: 15% 0;
+  margin: 0% 15%;
+  background: #DB6B6B;
+}
+.main .about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  margin: 25%;
+}
+@media (max-width: 500px) {
+  .main .about {
+    width: 100%;
+    margin: 0;
+  }
+}
+.main .about .about-color {
+  background: #EC6C6C;
+  margin: 5%;
+}
+.main .about p {
+  text-align: center;
+  padding: 15%;
+}
+.more {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .more {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+}
+.more .box {
+  justify-content: space-between !important;
+  margin: 2%!important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  margin: 25%;
+}
+@media (max-width: 500px) {
+  .more .box {
+    width: 100%;
+  }
+}
+.more-color {
+  background: #EC6C6C;
+  margin: 5%;
+}
+@media (max-width: 500px) {
+  .more-color {
+    width: 100%;
+  }
+}
+.button div:hover {
+  background: #AC3C3C;
+}
+.box-button {
+  width: 50%;
+}
+.box-button div {
+  width: 100%;
+}
+.box-button div p {
+  width: 100%;
+}
