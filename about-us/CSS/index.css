@@ -225,7 +225,6 @@ header a {
   font-size: 1.8rem;
   margin: 0 2%;
   width: 10rem;
-  border: black solid 2px;
 }
 .blurb {
   display: flex;
