@@ -27,28 +27,28 @@ p, a{
 }
 
 
-// .borders{
+.borders{
     
-//     display: flex;
-//     flex-direction: column;
-//     position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
   
-//         .dead, .alive{
-//             margin: 15% 0;
-//         }
+        .dead, .alive{
+            margin: 15% 0;
+        }
 
 
-// }
+}
 
-// .right{
-//    position: absolute;
-//     left:80.5%;
+.right{
+   position: absolute;
+    left:80.5%;
     
-// }
+}
 
-// .left{
-//     left:12%;
-// }
+.left{
+    left:12%;
+}
 
 .borders{
 
@@ -56,3 +56,19 @@ p, a{
         display: none;
     }
 }
+
+button{
+    width:50%;
+    margin-left:25%;
+    margin-top:5%;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    background:@indianRed;
+    
+    @media @phone{
+       margin:2% auto!important;
+        }
+    }
