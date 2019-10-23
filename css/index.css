@@ -218,8 +218,18 @@ header nav {
   justify-content: space-between;
   width: 50%;
 }
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+  }
+}
 header a {
   font-family: 'Catamaran', sans-serif;
+}
+@media (max-width: 500px) {
+  header a {
+    margin: 2%;
+  }
 }
 .top {
   width: 80%;
